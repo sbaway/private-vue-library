@@ -67,7 +67,7 @@
             </el-date-picker>
           </el-form-item>
         </el-col>
-        <el-col :span="7">
+        <el-col :span="8">
           <el-form-item>
             <el-button :loading="loading" type="primary" @click="search">
               搜索
@@ -250,7 +250,7 @@ export default {
   border-radius: 5px;
 }
 .search-form {
-  min-width: 1200px;
+  min-width: 800px;
 }
 .full-width {
   width: 100%;
