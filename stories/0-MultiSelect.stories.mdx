@@ -1,0 +1,18 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks'
+
+import MultiSelect from './components/MultiSelect.vue'
+
+<Meta title="MultiSelect" component={MultiSelect} />
+
+### 标签多选组件
+
+<Story name="basic" height="400px">
+  {{
+    components: { MultiSelect },
+    template: '<multi-select label="I\'m a label"/>',
+  }}
+</Story>
+
+#### Props
+
+<Props of={MultiSelect} />
