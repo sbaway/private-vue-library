@@ -37,9 +37,21 @@ export const withProps = () => ({
     options: {
       default: options,
     },
+    withSearch: {
+      default: boolean('withSearch', true),
+    },
     tagColor: {
       default: color('tagColor', '#409eff'),
     },
   },
-  template: `<multi-select :isRequired="isRequired" :options="options" :tagColor="tagColor" :label="label" :placeholder="placeholder" />`,
+  template: `
+    <multi-select
+      :isRequired="isRequired"
+      :withSearch="withSearch"
+      :options="options"
+      :tagColor="tagColor"
+      :label="label"
+      :placeholder="placeholder"
+    />
+  `,
 })

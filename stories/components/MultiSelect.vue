@@ -55,6 +55,7 @@
       <div class="options-content">
         <el-input
           v-model="searchValue"
+          v-if="withSearch"
           class="search-input"
           placeholder="搜索"
           type="text"
@@ -141,6 +142,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    withSearch: {
+      type: Boolean,
+      default: true,
+    },
     tagColor: {
       type: String,
       default: '#409eff',
@@ -154,7 +159,7 @@ export default {
       selectData: [],
       indeterminateStatus: {},
       checkAllStatus: {},
-      searchValue: ''
+      searchValue: '',
     }
   },
 
