@@ -36,7 +36,7 @@
     "kind-of": "6.0.3",
     "less-loader": "5.0.0",
     "minimist": "1.2.3",
-    "node-sass": "4.13.0",
+    "node-sass": "7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
